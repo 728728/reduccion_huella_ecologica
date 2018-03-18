@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Proyecto: Escuela Sustentable</title>
+	<link rel="icon" type="text/css" href=Imagen1.ico>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<style type="text/css">
+	/* Ocultar botón radio */
+	input[id^="spoiler"]{
+	display: none;
+	}
+	/* Estilo botón clicable */
+	input[id^="spoiler"] + label {
+	display: block;
+	width: 400px;
+	margin: 0 auto;
+	padding: 5px 20px;
+	background: #2ECC71;
+	cursor: pointer;
+	text-align: center;
+	}
+	/* Estilo botón cuando su INPUT está seleccionado */
+	input[id^="spoiler"]:checked + label {
+	color: #333;
+	background: #ccc;
+	}
+	/* Estilo caja SPOILER (inicialmente oculto) */
+	input[id^="spoiler"] ~ .spoiler {
+	width: 90%;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	margin: 10px auto 0; 
+	}
+	/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+	input[id^="spoiler"]:checked + label + .spoiler{
+	height: auto;
+	opacity: 1;
+	}
+	</style>
+</head>
+<body bgcolor="#D6EAF8">
+  <pre>
+  <marquee WIDTH="90%" behavior="alternate"><font face="Century Gothic" size=20 color="BLACK"><strong>Reducción de mi Huella Ecológica</strong></font></marquee>
+  </pre>
+  <hr color="WHITE">
+  <p align="center">
+  <img src="Imagen3.png" alt="OPPEA" width="1000" style="float:center;margin:20px"/>
+  </p>
+  <p align="justify" style="float:right;margin:20px"/><font face="Century Gothic" size=4 color="BLACK">En nuestra sociedad actual, el desarrollo tecnológico es la principal causa de consumo desmedido. En él se invierten grandes sumas de dinero y se le da prioridad por sobre otras cosas, como la alimentación o la salud; es decir, se le da más importancia al tener que al ser. El problema radica en comprar cosas que no necesitamos. Lo que está directamente relacionado con el impacto al ambiente, o mejor dicho con la huella ecológica que dejamos.</font><br><br>
+  <font face="Century Gothic" size=4 color="#1E8449"><strong>La huella ecológica es un indicador de sostenibilidad para medir el impacto de nuestra vida en el entorno.</strong></font><font face="Century Gothic" size=4 color="BLACK"> En otras palabras, todas las decisiones que tomamos en torno a lo que compramos, comemos, usamos o vestimos, incluidos los procesos para hacerlos posibles, tienen un impacto directo en el medio ambiente del cual somos responsables.</font></p>
+  <h1 align="center"><font face="Calibri Light" color="BLACK">Galería de Fotos</font></h1>
+  <ul class="galeria">
+  	<li><a href="#img1"><img src="1.jpg"></a></li>
+  	<li><a href="#img2"><img src="2.jpg"></a></li>
+  	<li><a href="#img3"><img src="3.jpg"></a></li>
+  	<li><a href="#img4"><img src="4.jpg"></a></li>
+  </ul>
+
+ <div class="modal" id="img1">
+	<h3>paisaje 1</h3>
+    <div class="imagen">
+    	<a href="#img4">&#60;</a>
+    	<a href="#img2"><img src="1.jpg" ></a>
+    	<a href="#img2">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+  </div>
+
+ <div class="modal" id="img2">
+	<h3>paisaje 2</h3>
+    <div class="imagen">
+    	<a href="#img1">&#60;</a>
+    	<a href="#img3"><img src="2.jpg" ></a>
+    	<a href="#img3">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+  </div>
+
+   <div class="modal" id="img3">
+	<h3>paisaje 3</h3>
+    <div class="imagen">
+    	<a href="#img2">&#60;</a>
+    	<a href="#img4"><img src="3.jpg" ></a>
+    	<a href="#img4">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+  </div>
+
+   <div class="modal" id="img4">
+	<h3>paisaje 1</h3>
+    <div class="imagen">
+    	<a href="#img3">&#60;</a>
+    	<a href="#img1"><img src="4.jpg" ></a>
+    	<a href="#img1">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+  </div>
+
+  <hr color="WHITE">
+  <h2 align="center"><font face="Calibri Light" color="BLACK">Plan de Investigación</font></h2>
+	<input type="checkbox" id="spoiler1"></input>
+	<label for="spoiler1"><font face="Century Gothic" color="WHITE"><strong>Problemática (Escenario)</strong></font></label>
+	<div class="spoiler"><p align="justify"><font face="Century Gothic" color="BLACK">Generalmente cualquier tema relacionado con el <strong>Medio Ambiente</strong> da mucho de que hablar. Ya sea una campaña de prevención referente al cuidado de este o un programa que promete solucionar todos los problemas ambientales del mundo; mas sin embargo, los jóvenes estudiantes (en general) no se dan a la tarea de investigar y profundizar más en el tema.<br><br>
+	A pesar de que la prevención y el cuidado del entorno es un tema muy importante y delicado hoy en día, considero que no ha sido bien abordado y no muchos conocemos lo básico de este.<br><br></p>
+	<p align="center">Entonces, <strong>¿Cuál sería tu propuesta para mejorar la transmisión de este tipo de información en los estudiantes del CBTis no. 118?</strong>
+	</font></p></div>
+	
+	<input type="checkbox" id="spoiler2"></input>
+	<label for="spoiler2"><font face="Century Gothic" color="WHITE"><strong>Problema</strong></font></label>
+	<div class="spoiler"><p align="center"><font face="Century Gothic" color="BLACK"><strong>¿Como apoyar a la difusión de información para disminuir así la huella ecológica de los estudiantes del CBTis 118?<br><br></strong></font>
+	<img src="Imagen17.jpg" alt="No jala"><br><br></p></div>
+
+	<input type="checkbox" id="spoiler3"></input>
+	<label for="spoiler3"><font face="Century Gothic" color="WHITE"><strong>Objeto y Campo de Investigación</strong></font></label>
+	<div class="spoiler"><p align="center"><font face="Century Gothic" color="BLACK">
+		<img src="Imagen18.jpg" style="float:right;margin:20px"/>
+		<ul>
+			<li><strong>Objeto de Investigación:</strong> Desarrollo de Páginas Web.</li>
+			<li><strong>Campo de Investigación:</strong> Diseño e implementación de Página Web Estática.</li>
+		</ul>
+	</font></p></div>
+
+	<p align="center">
+	<a href="second.html"><img src="Imagen6.png" width="440" height="45"></a><br>
+	<a href="third.html"><img src="Imagen7.png" width="440" height="45"></a>
+	</p>
+
+	<input type="checkbox" id="spoiler4"></input>
+	<label for="spoiler4"><font face="Century Gothic" color="WHITE"><strong>Hipótesis</strong></font></label>
+	<div class="spoiler"><p align="center"><font face="Century Gothic" color="BLACK">Si se diseña e implementa una página web estática entonces se apoya a la difusión de información con el fin de disminuir nuestra huella ecológica.<br><br></font>
+	<img src="Imagen19.jpg"></p></div>
+
+	<input type="checkbox" id="spoiler5"></input>
+	<label for="spoiler5"><font face="Century Gothic" color="WHITE"><strong>Tabla de Variables</strong></font></label>
+	<div class="spoiler"><p align="center"><img src="Tabla Variables.png" width="1000"></p></div>
+
+	<p align="center">
+	<a href="fourth.html"><img src="Imagen10.png" width="440" height="45"></a><br>
+	</p>
+
+	<input type="checkbox" id="spoiler6"></input>
+	<label for="spoiler6"><font face="Century Gothic" color="WHITE"><strong>Bibliografía</strong></font></label>
+	<div class="spoiler"><p align="center"><font face="Century Gothic" color="BLACK">
+		<ul>
+			<li>Sánchez, M. (s.f.). Cómo medir la eficacia de tus contenidos web. marzo 03, 2018, de web conversionmaster Recuperado de:</font><font face="Century Gothic"><a href="http://www.webconversionmaster.com/como-medir-la-eficacia-de-un-contenidos-web.html"> http://www.webconversionmaster.com/como-medir-la-eficacia-de-un-contenidos-web.html</a></li>
+			<li><font face="Century Gothic" color="BLACK">Gresham, T. (s.f.). ¿Qué es una página web estática?. marzo 03, 2018, de techlandia Sitio web:</font><font face="Century Gothic"><a href="https://techlandia.com/pagina-web-estatica-info_314661/"> https://techlandia.com/pagina-web-estatica-info_314661/</a></li>
+			<li><font face="Century Gothic" color="BLACK">Campos, D. (julio 28, 2017). Los mejores Hostings Web: el mejor, el barato y el gratuito. marzo 03, 2018, de Aula CM Sitio web: </font><font face="Century Gothic"><a href="http://aulacm.com/mejores-hosting-web-alojamiento/"> http://aulacm.com/mejores-hosting-web-alojamiento/</a></li>
+		</ul>
+	</div>
+
+	<hr color="WHITE">
+	<p align="center"><font face="Century Gothic" size=4 color="BLACK"><br>Ahora vamos a crear una tabla con distintas maneras en las que puedes reducir tu huella ecológica<br><br>
+	</font></p>
+	<table border=1px bgcolor="#D5F5E3" style="float:center;margin:20px"/>
+	<tr>
+	<td align="center"><strong><font face="Century Gothic" size=4 color="BLACK">¿Qué puedo hacer?</strong></td>
+	<td align="center"><strong><font face="Century Gothic" size=4 color="BLACK">¿Cómo lo puedo hacer?</font></strong></td>
+	<td align="center"><strong><font face="Century Gothic" size=4 color="BLACK">Imagen</font></strong></td>
+	<td align="center"><strong><font face="Century Gothic" size=4 color="BLACK">Video</font></strong></td>
+	</tr>
+	<tr>
+	<td align="center"><font face="Century Gothic" size=4 color="BLACK"><strong>Evita usar el automóvil</strong></font></td>
+	<td align="justify"><font face="Century Gothic" size=4 color="BLACK">Si necesitas cubrir distancias largas utiliza el transporte público, de esta manera también reducirás el número de autos circulando dentro de la ciudad. Para las distancias medias utiliza la bicicleta y para las distancias cortas camina, esto además ayudará a mejorar tu salud física.</font></td>
+	<td align="justify"><img src="light-car-inside-black.jpg" width="200"></td>
+	<td align="center"><font face="Arial" size=3 color="BLUE"><a href="https://www.youtube.com/watch?v=fdjAFYfw0c4">¿Quieres ver un video? da clic aquí</a></font></td>
+	</tr>
+	<td align="center"><font face="Century Gothic" size=4 color="BLACK"><strong>Cuida el agua</strong></font></td>
+	<td align="justify"><font face="Century Gothic" size=3 color="BLACK">Algunas acciones que puedes implementar para cuidar el agua son: utilizar la regadera en lugar de la bañera; arreglar las fugas de agua de los grifos; usar un vaso de agua mientras nos cepillamos los dientes; reutilizar el agua de la lavadora para lavar el patio; y aprovecharla en la medida de lo posible.</font></td>
+	<td align="justify"><img src="pexels-photo-287229.jpeg" width="200"></td>
+	<td align="center"><font face="Arial" size=3 color="BLUE"><a href="https://www.youtube.com/watch?v=MmJUd2gpsew">¿Quieres ver un video? da clic aquí</a></font></td>
+	</tr>
+	<td align="center"><font face="Century Gothic" size=4 color="BLACK"><strong>Come más sano</strong></font></td>
+	<td align="justify"><font face="Century Gothic" size=3 color="BLACK"> La solución está en consumir productos locales y de temporada porque, además de fomentar la economía local, estaremos consumiendo alimentos más frescos y libres de conservadores <strong>—sobretodo si son orgánicos.</strong></font></td>
+	<td align="justify"><img src="pexels-photo-326281.jpeg" width="200"></td>
+	<td align="center"><font face="Arial" size=3 color="BLUE"><a href="https://www.youtube.com/watch?v=a0c0K0IYC-U">¿Quieres ver un video? da clic aquí</a></font></td>
+	</tr>
+	<td align="center"><font face="Century Gothic" size=4 color="BLACK"><strong>Cuida tu consumo de energía eléctrica</strong></font></td>
+	<td align="justify"><font face="Century Gothic" size=3 color="BLACK">Colgar la ropa al sol en lugar de utilizar la secadora o lavar los platos a mano para no utilizar el lava vajillas son acciones muy sencillas que puedes comenzar a hacer. Otra medida de ahorro de energía es utilizar focos ahorradores o lámparas de LED en lugar de las luces amarillas tradicionales; <strong>sólo recuerda apagarlas cuando no las necesites.</strong></font></td>
+	<td align="justify"><img src="pexels-photo-45072.jpeg" width="200"></td>
+	<td align="center"><font face="Arial" size=3 color="BLUE"><a href="https://www.youtube.com/watch?v=VnvgrBl1dHI">¿Quieres ver un video? da clic aquí</a></font></td>
+	</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ 
+body {
+	background:url(madera.jpeg); /* Nuestra imagen de fondo */
+	background-repeat:no-repeat; /* Indicamos que no se repetira */
+	background-size:cover; /* Encajamos la imagen al 100% del ancho */
+	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
+ 
+	font-family:arial, Comic Sans MS , sans-serif;/*letra de titulo, de texto, modelo*/
+	line-height:20px;/*contrl entre lineas*/
+}
+ 
+.contenedor, .contenedor1, .contenedor2, .contenedor3{
+	/*en esta parte vamos a darle una propiedad al alineado del texto*/
+	width: 90%;
+	max-width:900px;
+	margin:auto;
+}
+ 
+article {
+	/*todo esto es para el cuadro donde irá el texto y el texto*/
+	background:rgba(90,135,255,.8);
+	padding:20px;
+	margin:20px 0;
+	color:#000000;
+	border-radius: 0.5em;
+	box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+ 
+article h2 {
+	/*color de texto*/
+	color:#000000;
+}
+ 
+article hr {
+	/*la linea que separa el titulo con el texto*/
+	background:#ff8585;
+	height:12px;
+	border:none;
+}
+ 
+article p {
+	line-height: 25px;
+}
+ 
+article h2, article p, article hr {
+	margin-bottom: 20px;
+}
